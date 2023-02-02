@@ -2,7 +2,7 @@
 #   CIS261
 #   Project Phase 2
 def GetEmpName():
-    empname = input("Enter employee name (END to terminate): ")
+    empname = input("Enter employee name: ")
     return empname
 def GetDatesWorked():
     fromdate = input("Enter Start date (mm/dd/yyyy): ")
@@ -42,15 +42,15 @@ def printinfo(EmpDetailList):
 
         grosspay, incometax, netpay = CalcTaxAndNetPay(hours, hourlyrate, taxrate)
         print()
-        print("Name:  ", empname)
-        print("From Date:  ", fromdate)
-        print("To Date:  ", todate)
-        print("Hours Worked:  ", f"{hours:,.2f}")
-        print("Hourly Rate:  ", f"{hourlyrate:,.2f}")
-        print("Gross Pay:   ", f"{grosspay:,.2f}")
-        print("Tax Rate:   ", f"{taxrate:,.1%}")
-        print("Income Tax:  ", f"{incometax:,.2f}")
-        print("Net Pay:  ", f"{netpay:,.2f}")
+        print("Name: ", empname)
+        print("From Date: ", fromdate)
+        print("To Date: ", todate)
+        print("Hours Worked: ", f"{hours:,.2f}")
+        print("Hourly Rate: ", f"{hourlyrate:,.2f}")
+        print("Gross Pay: ", f"{grosspay:,.2f}")
+        print("Tax Rate:  ", f"{taxrate:,.1%}")
+        print("Income Tax: ", f"{incometax:,.2f}")
+        print("Net Pay: ", f"{netpay:,.2f}")
         TotEmployees += 1
         TotHours += hours
         TotGrossPay += grosspay
